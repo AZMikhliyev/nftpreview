@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --body: #0D192C;
+  --card: #15263F;
+  --color-h1: #FFFFFF;
+  --card-p-timing-color: #8BACD9;
+  --eth-text-color: #00FFF8;
+  --hr: #2E405A;
+  --hover-eye: #00fff77f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body);
+  font-family: "Outfit", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .card {
+  background: var(--card);
+  padding: 24px 24px 32px 24px;
+  border-radius: 15px;
+}
+
+.wrapper .card .cubic {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.wrapper .card .cubic .eye {
+  display: none;
+}
+
+.wrapper .card .cubic:hover .eye {
+  padding: 127px;
+  background: var(--hover-eye);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.wrapper .card h1 {
+  color: var(--color-h1);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27.72px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.wrapper .card h1:hover {
+  color: var(--eth-text-color);
+}
+
+.wrapper .card p {
+  width: 100%;
+  max-width: 302px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--card-p-timing-color);
+  margin-bottom: 24px;
+}
+
+.wrapper .card .card-content {
+  width: 100%;
+  max-width: 301px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.wrapper .card .card-content .eth {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.wrapper .card .card-content .eth h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.16px;
+  color: var(--eth-text-color);
+}
+
+.wrapper .card .card-content .timing {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.wrapper .card .card-content .timing h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.16px;
+  color: var(--card-p-timing-color);
+}
+
+.wrapper .card hr {
+  border: 1px solid var(--hr);
+  border-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.wrapper .card .card-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wrapper .card .card-user h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.16px;
+}
+
+.wrapper .card .card-user h3 .name {
+  color: var(--color-h1);
+  cursor: pointer;
+}
+
+.wrapper .card .card-user h3 .name:hover {
+  color: var(--eth-text-color);
+}
+
+.wrapper .card .card-user h3 .user-content {
+  color: var(--card-p-timing-color);
+}
